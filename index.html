@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Stopwatch</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/png" href="../stopwatch/img/Analog-Clock-PNG.png">
+
+    </head>
+    <body>
+        <div id="container">
+            <h1>Javascript Stopwatch</h1><br>
+            <div id="timer-area">
+                <img alt="Clock" src="img/Analog-Clock-PNG.png">
+                <input type="button" id="startTimer" value="Start" onclick="startTimer()">
+                <input type="button" id="pauseTimer" value="Stop" onclick="pauseTimer()" disabled>
+                <input type="button" id="continueTimer" value="Continue" onclick="startTimer()" disabled>
+                <input type="button" id="restartTimer" value="Restart" onclick="restartTimer()" disabled>
+
+                <p id="timer-text">
+                    <span id="Hours">00</span>
+                    <span id="Minutes">:00</span>
+                    <span id="Seconds">:00</span>
+                    <span id="Milliseconds">:00</span>
+                </p>
+
+            </div>
+        </div>
+
+       <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
